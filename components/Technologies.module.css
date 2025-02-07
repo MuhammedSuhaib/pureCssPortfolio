@@ -1,0 +1,95 @@
+/* Technologies.module.css */
+.technologies-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    /* py-10 */
+    padding-top: 2.5rem;
+    /* py-10 */
+    padding-bottom: 2.5rem;
+    /* py-10 */
+}
+
+.title {
+    padding-bottom: 1.25rem;
+    /* pb-5 */
+    font-size: 2.25rem;
+    /* text-4xl */
+    margin-top: 1.5rem;
+    /* mt-6 */
+    text-align: center;
+}
+
+.titlemd {
+    font-size: 3.75rem;
+    /* md:text-6xl */
+}
+
+.list-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    /* gap-6 */
+}
+
+.list-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    /* gap-14 */
+}
+
+.list-column-small {
+    gap: 1.5rem;
+    /* gap-6 */
+}
+
+.list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-item img {
+    width: 100px;
+    height: 100px;
+}
+
+.list-item-text {
+    text-align: center;
+    margin-top: 0.5rem;
+    /* mt-2 */
+}
+
+@media (min-width: 640px) {
+    .list-row {
+        flex-direction: column;
+    }
+
+    .list-column {
+        flex-direction: row;
+    }
+}
+
+/* grid */
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    .gridContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .gridContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

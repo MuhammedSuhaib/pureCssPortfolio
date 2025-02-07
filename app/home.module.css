@@ -1,0 +1,46 @@
+/* General Flex container styles */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Hero styles */
+.Hero {
+  font-size: 2.25rem;
+  /* text-4xl */
+  margin-top: 1.5rem;
+  /* mt-6 */
+  text-align: center;
+}
+
+/* Name styles */
+.Name {
+  font-size: 3rem;
+  /* Default font-size */
+  text-align: center;
+}
+
+/* Responsive styles for 768px and above */
+@media (min-width: 768px) {
+  .Hero {
+    margin-left: 0;
+  }
+
+  .Name {
+    font-size: 4.375rem;
+  }
+
+  .flex {
+    flex-direction: row;
+  }
+}
