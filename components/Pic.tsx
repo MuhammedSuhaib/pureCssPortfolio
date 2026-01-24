@@ -5,7 +5,7 @@ function Pic() {
     <div style={{ marginBlock: "16px", display: "flex", justifyContent: "center", alignItems: "center" }}>
       {/* Profile Picture Section */}
       <Image
-        src="/me.jpg"
+        src="./me.jpg"
         alt="Profile Picture"
         width={250}
         height={250}

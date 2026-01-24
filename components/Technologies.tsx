@@ -16,7 +16,7 @@ function Technologies() {
         <ul className={styles["list-column"]}>
           <li className={styles["list-item"]}>
             <Image
-              src="/h.png"
+              src="./h.png"
               alt="HTML"
               width={100}
               height={100}
@@ -25,16 +25,16 @@ function Technologies() {
             <p className={styles["list-item-text"]}>HTML</p>
           </li>
           <li className={styles["list-item"]}>
-            <Image src="/c.png" alt="CSS" width={100} height={100} />
+            <Image src="./c.png" alt="CSS" width={100} height={100} />
             <p className={styles["list-item-text"]}>CSS</p>
           </li>
           <li className={styles["list-item"]}>
-            <Image src="/js.png" alt="JavaScript" width={100} height={100} />
+            <Image src="./js.png" alt="JavaScript" width={100} height={100} />
             <p className={styles["list-item-text"]}>JavaScript</p>
           </li>
           <li className={styles["list-item"]}>
             <Image
-              src="/ts.png"
+              src="./ts.png"
               alt="TypeScript"
               width={100}
               height={100}
@@ -46,20 +46,20 @@ function Technologies() {
         {/* Row 2 */}
         <ul className={`${styles["list-column"]} ${styles["list-column-small"]}`}>
           <li className={styles["list-item"]}>
-            <Image src="/nodejs.png" alt="Node.js" width={100} height={100} />
+            <Image src="./nodejs.png" alt="Node.js" width={100} height={100} />
             <p className={styles["list-item-text"]}>Node.js</p>
           </li>
           <li className={styles["list-item"]}>
-            <Image src="/npm.png" alt="npm" width={100} height={100} />
+            <Image src="./npm.png" alt="npm" width={100} height={100} />
             <p className={styles["list-item-text"]}>npm</p>
           </li>
           <li className={styles["list-item"]}>
-            <Image src="/nextjs.png" alt="Next.js" width={100} height={100} />
+            <Image src="./nextjs.png" alt="Next.js" width={100} height={100} />
             <p className={styles["list-item-text"]}>Next.js</p>
           </li>
           <li className={styles["list-item"]}>
             <Image
-              src="/tailwind.png"
+              src="./tailwind.png"
               alt="Tailwind CSS"
               width={100}
               height={100}
@@ -67,7 +67,7 @@ function Technologies() {
             <p className={styles["list-item-text"]}>Tailwind CSS</p>
           </li>
           <li className={styles["list-item"]}>
-            <Image src="/shadcn.png" alt="shadcn" width={100} height={100} />
+            <Image src="./shadcn.png" alt="shadcn" width={100} height={100} />
             <p className={styles["list-item-text"]}>shadcn</p>
           </li>
         </ul>

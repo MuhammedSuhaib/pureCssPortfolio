@@ -27,7 +27,7 @@ export default function Home() {
             className={style.flex} style={{ marginInline: "12px", color: "white" }}
           >
             <Image
-              src="/linkedin.png"
+              src="./linkedin.png"
               width={500}
               height={172}
               alt="LinkedIn"
@@ -41,7 +41,7 @@ export default function Home() {
             className={style.flex} style={{ marginInline: "12px", color: "white" }}
           >
             <Image
-              src="/Github.png"
+              src="./Github.png"
               width={357}
               height={357}
               alt="GitHub"

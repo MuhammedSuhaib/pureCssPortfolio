@@ -66,7 +66,7 @@ export default function Timeline() {
                     rel="noopener noreferrer"
                     style={{ display: "flex", alignItems: "center", marginInline: "12px", color: "white" }}
                 >
-                    <Image src="/linkedin.png" width={500} height={172} alt="LinkedIn" style={{ width: "56px", height: "40px" }} />
+                    <Image src="./linkedin.png" width={500} height={172} alt="LinkedIn" style={{ width: "56px", height: "40px" }} />
                 </a>
                 <a
                     href="https://github.com/MuhammedSuhaib"
@@ -75,7 +75,7 @@ export default function Timeline() {
                     style={{ display: "flex", alignItems: "center", marginInline: "12px", color: "white" }}
                 >
                     <Image
-                        src="/Github.png"
+                        src="./Github.png"
                         width={357}
                         height={357}
                         alt="GitHub"
