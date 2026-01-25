@@ -5,7 +5,7 @@ const merienda = Merienda({ subsets: ["latin"], weight: ["400", "700"] });
 function Header() {
   return (
     <header style={{marginBottom:"40px"}}>
-      <div className={`${style.flex} bg-gradient-to-b from-black to-[#26045c] transition-all hover:bg-gradient-to-br hover:from-[#32027e] hover:to-black`} style={{justifyContent:"space-between", padding:"24px"}}>
+      <div className={`${style.flex}`} style={{justifyContent:"space-between", padding:"24px"}}>
         <strong style={{ fontSize:"36px"}} >
           𝔐𝔲𝔥𝔞𝔪𝔪𝔞𝔡 ͯś𝔲𝔥𝔞𝔦𝔟
         </strong>

@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body  className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-b from-black to-[#26045c] transition-all hover:bg-gradient-to-br hover:from-[#32027e] hover:to-black`}>
+      <body  className={`${geistSans.variable} ${geistMono.variable} antialiased `}>
         <Header/>
         {children}
       </body>

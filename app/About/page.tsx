@@ -1,7 +1,7 @@
 import { Merienda, Montserrat } from "next/font/google";
-import Image from "next/image";
 import Link from "next/link";
 import style from "./about.module.css";
+import { Github, Linkedin, Mailbox, ScrollText } from "lucide-react";
 
 const merienda = Merienda({ subsets: ["latin"], weight: ["400", "700"] });
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["300", "400", "600"] });
@@ -36,82 +36,111 @@ export default function Timeline() {
         { year: "2007-2021", text: "Passed Matriculation from SCOSIT School." }
     ];
 
-    return (
-        <div style={{ minHeight: "100vh", paddingBlock: "40px" }} className={style.flexColumn}>
-            <section style={{ maxWidth: "768px", textAlign: "center", color: "white", marginBottom: "40px" }}>
-                <h1 className={`${merienda.className}`} style={{ color: "white", fontSize: "48px" }}>About Me</h1>
-                <p className={`${montserrat.className}`}>
-                    I am a passionate self-learner and tech enthusiast with a growing interest in front-end development, and design. Over the past few years, I have dedicated myself to expanding my skill set through various courses and hands-on projects.
-                </p>
-                <p className={`${montserrat.className}`}>
-                    In 2025, I am working on a presentation titled <strong> &quot;Learn Computing in 0 Days&quot;</strong>, aimed at helping beginners understand basic computing concepts. Prior to that, I explored internet security and backdoors, which sparked my fascination with the digital landscape.
-                </p>
-                <p className={`${montserrat.className}`}>
-                    My journey into tech began in 2023 when I took my first steps in web development (HTML, CSS, JavaScript) and enhanced my skills with tools like Photoshop and Canva. However, after diving into web development, I no longer focus on graphic design.
-                </p>
-                <p className={`${montserrat.className}`}>
-                    I am now diving deeper into technologies like TypeScript, Next.js, and preparing to explore Agentic AI, Metaverse, and Cloud Computing. My journey is just beginning, and I&apos;m excited about where it will take me.
-                </p>
-            </section>
-            <h2 className={`${merienda.className}`} style={{ color: "white", fontSize: "48px" }}>My Timeline</h2>
-            {levels.map((item, index) => (
-                <TimelineItem key={index} year={item.year} text={item.text} />
-            ))}
-            {/* Buttons */}
-            <p style={{color:"white",fontSize:"18px",marginBottom:"12px"}}>Click here for:</p>
-            <section className={style.flex} style={{ gap: "40px" }}>
-                <a
-                    href="https://www.linkedin.com/in/suhaib1/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ display: "flex", alignItems: "center", marginInline: "12px", color: "white" }}
-                >
-                    <Image src="./linkedin.png" width={500} height={172} alt="LinkedIn" style={{ width: "56px", height: "40px" }} />
-                </a>
-                <a
-                    href="https://github.com/MuhammedSuhaib"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ display: "flex", alignItems: "center", marginInline: "12px", color: "white" }}
-                >
-                    <Image
-                        src="./Github.png"
-                        width={357}
-                        height={357}
-                        alt="GitHub"
-                        style={{
-                            width: "56px",
-                            height: "50px",
-                            borderRadius: "0.5rem",
-                            backgroundColor: "#26045c"
-                        }}
-                    />
-                </a>
-                <Link
-                    href="/co"
-                    style={{
-                        padding: "0.5rem 1rem",
-                        color: "white",
-                        borderRadius: "0.375rem",
-                        backgroundColor: "#ff5100",
-                        textDecoration: "none",
-                    }}
-                >
-                    Contact Page
-                </Link>
-                <Link
-                    href="/"
-                    style={{
-                        padding: "0.5rem 1rem",
-                        color: "white",
-                        borderRadius: "0.375rem",
-                        backgroundColor: "#5c0442",
-                        textDecoration: "none",
-                    }}
-                >
-                    Back to Home
-                </Link>
-            </section>
+  return (
+    <div
+      style={{ minHeight: "100vh", paddingBlock: "40px" }}
+      className={style.flexColumn}
+    >
+      <section
+        style={{
+          maxWidth: "768px",
+          textAlign: "center",
+          color: "white",
+          marginBottom: "40px",
+        }}
+      >
+        <h1
+          className={`${merienda.className}`}
+          style={{ color: "white", fontSize: "48px" }}
+        >
+          About Me
+        </h1>
+        <p className={`${montserrat.className}`}>
+          I am a passionate self-learner and tech enthusiast with a growing
+          interest in front-end development, and design. Over the past few
+          years, I have dedicated myself to expanding my skill set through
+          various courses and hands-on projects.
+        </p>
+        <p className={`${montserrat.className}`}>
+          In 2025, I am working on a presentation titled{" "}
+          <strong> &quot;Learn Computing in 0 Days&quot;</strong>, aimed at
+          helping beginners understand basic computing concepts. Prior to that,
+          I explored internet security and backdoors, which sparked my
+          fascination with the digital landscape.
+        </p>
+        <p className={`${montserrat.className}`}>
+          My journey into tech began in 2023 when I took my first steps in web
+          development (HTML, CSS, JavaScript) and enhanced my skills with tools
+          like Photoshop and Canva. However, after diving into web development,
+          I no longer focus on graphic design.
+        </p>
+        <p className={`${montserrat.className}`}>
+          I am now diving deeper into technologies like TypeScript, Next.js, and
+          preparing to explore Agentic AI, Metaverse, and Cloud Computing. My
+          journey is just beginning, and I&apos;m excited about where it will
+          take me.
+        </p>
+      </section>
+      <h2
+        className={`${merienda.className}`}
+        style={{ color: "white", fontSize: "48px" }}
+      >
+        My Timeline
+      </h2>
+      {levels.map((item, index) => (
+        <TimelineItem key={index} year={item.year} text={item.text} />
+      ))}
+      {/* Buttons */}
+      <p style={{ color: "white", fontSize: "18px", marginBottom: "12px" }}>
+        Click here for:
+      </p>
+      <section
+        className={`${style["w-full"]} ${style["text-center"]} ${style["py-10"]}`}
+      >
+        <p
+          className={`${style["text-white"]} ${style["text-lg"]} ${style["mb-3"]}`}
+        >
+          Click here for:
+        </p>
+        <div
+          className={`${style["flex"]} ${style["flex-col"]} ${style["md-flex-row"]} ${style["justify-center"]} ${style["items-center"]} ${style["gap-5"]}`}
+        >
+          <a
+            href="https://github.com/MuhammedSuhaib"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="GitHub Profile"
+            className={`${style["flex"]} ${style["flex-col"]} ${style["items-center"]} ${style["text-white"]}`}
+          >
+            <Github className={style["size-10"]} />
+            <span>GitHub Profile</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/suhaib1/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Linkedin Profile"
+            className={`${style["flex"]} ${style["flex-col"]} ${style["items-center"]} ${style["text-white"]}`}
+          >
+            <Linkedin className={style["size-10"]} />
+            <span>Linkedin Profile</span>
+          </a>
+          <Link
+            href="/co"
+            className={`${style["flex"]} ${style["flex-col"]} ${style["items-center"]} ${style["text-white"]}`}
+          >
+            <Mailbox className={style["size-10"]} />
+            <span>Contact Me</span>
+          </Link>
+          <Link
+            href="/"
+            className={`${style["flex"]} ${style["flex-col"]} ${style["items-center"]} ${style["text-white"]}`}
+          >
+            <ScrollText className={style["size-10"]} />
+            <span>Back to Home</span>
+          </Link>
         </div>
-    );
+      </section>
+    </div>
+  );
 }

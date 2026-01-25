@@ -88,3 +88,62 @@
         padding-inline: 32px;
     }
 }
+
+/* Tailwind equivalent classes converted to CSS modules */
+.w-full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.mb-3 {
+    margin-bottom: 0.75rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap-5 {
+    gap: 1.25rem;
+}
+
+.size-10 {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+/* Medium screens and above */
+@media (min-width: 768px) {
+    .md-flex-row {
+        flex-direction: row;
+    }
+}

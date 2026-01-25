@@ -18,9 +18,8 @@ function Technologies() {
             <Image
               src="./h.png"
               alt="HTML"
-              width={100}
-              height={100}
-              className="size-[140px]"
+              width={140}
+              height={140}
             />
             <p className={styles["list-item-text"]}>HTML</p>
           </li>
@@ -36,9 +35,8 @@ function Technologies() {
             <Image
               src="./ts.png"
               alt="TypeScript"
-              width={100}
-              height={100}
-              className="size-[140px]"
+              width={140}
+              height={140}
             />
             <p className={styles["list-item-text"]}>TypeScript</p>
           </li>

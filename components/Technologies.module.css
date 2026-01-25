@@ -93,3 +93,46 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+/* Projects.module.css */
+.card {
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #333333;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #b916fa; /* Purple glow matching your theme */
+    box-shadow: 0 10px 30px rgba(185, 22, 250, 0.2);
+}
+
+.cardImageContainer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.cardImage {
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover .cardImage {
+    transform: scale(1.1);
+}
+
+.cardHeader {
+    padding: 1.25rem;
+    background-color: #252525;
+    border-bottom: 1px solid #333333;
+}
+
+.cardBody {
+    padding: 1.25rem;
+}
